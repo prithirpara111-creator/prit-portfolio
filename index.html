@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prit Hirpara | Portfolio - B.Sc. IT Student & Aspiring Web Developer</title>
+  <meta name="description" content="Personal portfolio of Prit Hirpara, a 3rd-year B.Sc. IT student and aspiring web developer specializing in Web Development and Database Management.">
+  <meta name="theme-color" content="#0A192F">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Floating Toast Notification System -->
+  <div id="toast" class="toast" role="alert" aria-live="polite">
+    <div class="toast-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    </div>
+    <span id="toast-message" class="toast-message">Message copied!</span>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="Prit Hirpara Home">
+        <span class="logo-mark">PH</span>
+        <span class="logo-dot"></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header CTA & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-outline-navy header-btn">
+          <span>Let's Talk</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay -->
+  <div class="mobile-drawer-overlay" id="mobile-overlay"></div>
+
+  <main>
+    <!-- SECTION 1: HERO -->
+    <section class="section hero-section" id="home">
+      <div class="container hero-container">
+        
+        <!-- Left Column: Pitch & Identity -->
+        <div class="hero-content reveal-fade-up">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span class="status-text">3rd-Year B.Sc. IT Student • Open to Internships</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-navy">Prit Hirpara</span>.<br>
+            <span class="title-sub">B.Sc. IT Student & <span class="text-highlight">Aspiring Web Developer</span></span>
+          </h1>
+
+          <p class="hero-lead">
+            I am a third-year Information Technology student passionate about web development and database management. I love building practical, reliable web applications and turn real-world problems into clean, functional digital solutions.
+          </p>
+
+          <!-- Core Interest Tags -->
+          <div class="hero-interests">
+            <span class="interest-label">Core Focus:</span>
+            <span class="tag-pill tag-accent">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Web Development
+            </span>
+            <span class="tag-pill tag-navy">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              Database Management
+            </span>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Micro Metric Proof Points -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-val">3rd Year</span>
+              <span class="metric-desc">B.Sc. IT Academic Track</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-val">2+</span>
+              <span class="metric-desc">Complete Management Systems</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-val">7+</span>
+              <span class="metric-desc">Core Languages & DB Tech</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Avatar Portrait Card with Floating Chips -->
+        <div class="hero-visual reveal-fade-up reveal-delay-1">
+          <div class="avatar-card-wrapper">
+            <!-- Decorative Orange Glow Aura -->
+            <div class="avatar-glow-backdrop"></div>
+            
+            <div class="avatar-card">
+              <div class="avatar-header">
+                <span class="dot-btn red"></span>
+                <span class="dot-btn yellow"></span>
+                <span class="dot-btn green"></span>
+                <span class="card-caption">prit-hirpara.dev</span>
+              </div>
+              
+              <div class="avatar-image-box">
+                <!-- User profile photo -->
+                <img 
+                  src="assets/images/profile.jpg.jpeg" 
+                  alt="Prit Hirpara" 
+                  class="profile-image" 
+                  onerror="this.onerror=null; this.src='assets/images/profile.jpg';"
+                >
+                <div class="avatar-overlay-strip">
+                  <span class="strip-mono">[B.Sc. IT • 3RD YEAR]</span>
+                </div>
+              </div>
+
+              <div class="avatar-footer">
+                <div class="avatar-info">
+                  <span class="avatar-name">Prit Hirpara</span>
+                  <span class="avatar-role">3rd Year • B.Sc. IT</span>
+                </div>
+                <div class="avatar-badge">
+                  <span>Aspiring Web Dev</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Micro-badges -->
+            <div class="floating-badge badge-top-right">
+              <div class="floating-icon icon-orange">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <div>
+                <span class="floating-title">MySQL & Architecture</span>
+                <span class="floating-sub">Relational Schema & Queries</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <div class="floating-icon icon-navy">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div>
+                <span class="floating-title">Full-Stack Web</span>
+                <span class="floating-sub">PHP • JS • Python • Java</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT ME -->
+    <section class="section about-section bg-alt" id="about">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-fade-up">
+          <div class="section-eyebrow">[ 01 // ABOUT ME ]</div>
+          <h2 class="section-title">My Journey as an IT Student & Developer</h2>
+          <p class="section-subtitle">Curious about how things work behind the screen, committed to writing clean code, and excited to build meaningful web experiences.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story Narrative Column -->
+          <div class="about-story-card reveal-fade-up">
+            <h3 class="story-heading">Who I Am & What Drives Me</h3>
+            <p class="story-text">
+              Hello! I'm <strong>Prit Hirpara</strong>, currently in my <strong>third year pursuing B.Sc. in Information Technology</strong>. What started as curiosity about how websites work behind the scenes has grown into a strong dedication to becoming a skilled web developer.
+            </p>
+            <p class="story-text">
+              Throughout my academic journey, I have gravitated toward two core areas: <strong>Web Development</strong> and <strong>Database Management</strong>. I genuinely enjoy taking everyday challenges—like booking hospital appointments or resolving housing society complaints—and designing complete, working systems that make people's lives easier.
+            </p>
+            <p class="story-text">
+              My technical foundation includes <strong>HTML, CSS, JavaScript, PHP, MySQL, Python, and Java</strong>. As an aspiring developer, I believe in strong fundamentals, continuous hands-on practice, and writing code that is clean, readable, and reliable.
+            </p>
+
+            <!-- Signature Key Points -->
+            <div class="story-highlights">
+              <div class="highlight-item">
+                <span class="highlight-check">✓</span>
+                <span>Third-year B.Sc. IT student with a strong passion for web development</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-check">✓</span>
+                <span>Hands-on experience developing full-stack management systems with PHP & MySQL</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-check">✓</span>
+                <span>Dedicated learner actively preparing for web development and software internships</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Grid Profile Details -->
+          <div class="about-bento reveal-fade-up reveal-delay-1">
+            <div class="bento-card bento-card-primary">
+              <div class="bento-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              </div>
+              <h4 class="bento-title">Current Education</h4>
+              <p class="bento-desc">B.Sc. Information Technology</p>
+              <span class="bento-meta">BMIIT • Uka Tarsadia University (UTU)</span>
+            </div>
+
+            <div class="bento-card bento-card-orange">
+              <div class="bento-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <h4 class="bento-title">Database Focus</h4>
+              <p class="bento-desc">Relational Design & MySQL</p>
+              <span class="bento-meta">Schemas, Queries & Data Integrity</span>
+            </div>
+
+            <div class="bento-card">
+              <div class="bento-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <h4 class="bento-title">Web Development</h4>
+              <p class="bento-desc">Aspiring Web Developer</p>
+              <span class="bento-meta">Responsive UI & Backend Logic</span>
+            </div>
+
+            <div class="bento-card">
+              <div class="bento-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <h4 class="bento-title">Core Languages</h4>
+              <p class="bento-desc">Python & Java</p>
+              <span class="bento-meta">OOP Concepts & Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: TECHNICAL SKILLS -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-fade-up">
+          <div class="section-eyebrow">[ 02 // TECHNICAL ARSENAL ]</div>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">Categorized by functional stack and engineering domain.</p>
+        </div>
+
+        <div class="skills-pillars-grid">
+          
+          <!-- Pillar 1: Frontend Development -->
+          <div class="skill-pillar-card reveal-fade-up">
+            <div class="pillar-header">
+              <div class="pillar-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div>
+                <h3 class="pillar-title">Web & Frontend</h3>
+                <span class="pillar-caption">Interface & User Experience</span>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <!-- HTML5 -->
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <div class="skill-name-badge">
+                    <span class="skill-icon-chip">HTML</span>
+                    <span class="skill-name">HTML5</span>
+                  </div>
+                  <span class="skill-tag">Semantic Markup</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <!-- CSS3 -->
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <div class="skill-name-badge">
+                    <span class="skill-icon-chip">CSS</span>
+                    <span class="skill-name">CSS3</span>
+                  </div>
+                  <span class="skill-tag">Flexbox, Grid & Responsive</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <div class="skill-name-badge">
+                    <span class="skill-icon-chip">JS</span>
+                    <span class="skill-name">JavaScript (ES6+)</span>
+                  </div>
+                  <span class="skill-tag">DOM & Dynamic Systems</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 82%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Backend & Server-Side -->
+          <div class="skill-pillar-card reveal-fade-up reveal-delay-1">
+            <div class="pillar-header">
+              <div class="pillar-icon-box accent">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              </div>
+              <div>
+                <h3 class="pillar-title">Backend & Logic</h3>
+                <span class="pillar-caption">Server Logic & Processing</span>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <!-- PHP -->
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <div class="skill-name-badge">
+                    <span class="skill-icon-chip">PHP</span>
+                    <span class="skill-name">PHP</span>
+                  </div>
+                  <span class="skill-tag">CRUD, Auth & Endpoints</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-orange" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <!-- Python -->
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <div class="skill-name-badge">
+                    <span class="skill-icon-chip">PY</span>
+                    <span class="skill-name">Python</span>
+                  </div>
+                  <span class="skill-tag">Data Logic & Scripting</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-orange" style="width: 80%;"></div>
+                </div>
+              </div>
+
+              <!-- Java -->
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <div class="skill-name-badge">
+                    <span class="skill-icon-chip">JAVA</span>
+                    <span class="skill-name">Java</span>
+                  </div>
+                  <span class="skill-tag">OOP & Architecture</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-orange" style="width: 78%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Database & Tools -->
+          <div class="skill-pillar-card reveal-fade-up reveal-delay-2">
+            <div class="pillar-header">
+              <div class="pillar-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <div>
+                <h3 class="pillar-title">Database & Ecosystem</h3>
+                <span class="pillar-caption">Relational Data & Workflow</span>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <!-- MySQL -->
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <div class="skill-name-badge">
+                    <span class="skill-icon-chip">SQL</span>
+                    <span class="skill-name">MySQL</span>
+                  </div>
+                  <span class="skill-tag">Relational Design & Joins</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <!-- Tools & Environment -->
+              <div class="tools-integrated-box">
+                <span class="tools-box-label">Development Tools & Workflow:</span>
+                <div class="tools-chips-wrap">
+                  <span class="tool-badge">Git</span>
+                  <span class="tool-badge">GitHub</span>
+                  <span class="tool-badge">VS Code</span>
+                  <span class="tool-badge">XAMPP / Apache</span>
+                  <span class="tool-badge">phpMyAdmin</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: MY PROJECTS -->
+    <section class="section projects-section bg-alt" id="projects">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-fade-up">
+          <div class="section-eyebrow">[ 03 // PORTFOLIO ]</div>
+          <h2 class="section-title">Featured Engineered Systems</h2>
+          <p class="section-subtitle">Real-world applications built with relational database logic and clean full-stack architecture.</p>
+        </div>
+
+        <div class="projects-showcase-grid">
+
+          <!-- PROJECT 1: Hospital Appointment Management System -->
+          <article class="project-card reveal-fade-up">
+            <div class="project-card-header">
+              <div class="project-badge-row">
+                <span class="category-pill">Full-Stack Web System</span>
+                <span class="status-indicator">Completed Project</span>
+              </div>
+              <h3 class="project-title">Hospital Appointment Management System</h3>
+              <p class="project-summary">
+                A streamlined healthcare scheduling platform designed to eliminate patient queues, optimize doctor calendar availability, and maintain structured medical consult records.
+              </p>
+            </div>
+
+            <!-- Problem & Solution Box -->
+            <div class="project-insight-box">
+              <div class="insight-row">
+                <span class="insight-label">The Problem:</span>
+                <span class="insight-text">Overcrowded outpatient departments, manual paper-based scheduling conflicts, and inefficient doctor slot management.</span>
+              </div>
+              <div class="insight-row">
+                <span class="insight-label">The Solution:</span>
+                <span class="insight-text">Automated patient slot booking engine with real-time doctor availability checking, instant confirmations, and multi-role administrative oversight.</span>
+              </div>
+            </div>
+
+            <!-- Architectural Highlights -->
+            <div class="project-features-list">
+              <h4 class="features-title">Core Engineered Modules:</h4>
+              <ul class="features-checklist">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6600" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Doctor Scheduling Engine:</strong> Multi-department doctor categorization with dynamic timeslot validation.</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6600" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Patient Booking Portal:</strong> Direct booking flow with status updates (Pending, Confirmed, Completed).</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6600" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Relational DB Architecture:</strong> Normalized MySQL schema linking patients, doctors, departments, and booking history.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Project Tech Stack Tags -->
+            <div class="project-card-footer">
+              <div class="project-tech-tags">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML5 / CSS3</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-outline-navy project-modal-trigger" data-project="hospital">
+                  <span>View Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Society Complaint Management System -->
+          <article class="project-card reveal-fade-up reveal-delay-1">
+            <div class="project-card-header">
+              <div class="project-badge-row">
+                <span class="category-pill">Residential Portal • Automation</span>
+                <span class="status-indicator">Completed Project</span>
+              </div>
+              <h3 class="project-title">Society Complaint Management System</h3>
+              <p class="project-summary">
+                A centralized ticketing and grievance resolution platform for residential societies, empowering residents to report issues and track committee resolution workflows in real time.
+              </p>
+            </div>
+
+            <!-- Problem & Solution Box -->
+            <div class="project-insight-box">
+              <div class="insight-row">
+                <span class="insight-label">The Problem:</span>
+                <span class="insight-text">Lost maintenance requests, lack of status transparency between residents and management committee, and zero historical audit logs.</span>
+              </div>
+              <div class="insight-row">
+                <span class="insight-label">The Solution:</span>
+                <span class="insight-text">Digital ticket lifecycle system with categorized complaint queues, priority escalation, and administrative action timestamps.</span>
+              </div>
+            </div>
+
+            <!-- Architectural Highlights -->
+            <div class="project-features-list">
+              <h4 class="features-title">Core Engineered Modules:</h4>
+              <ul class="features-checklist">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6600" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Complaint Categorization & Urgency:</strong> Electrical, plumbing, security, and general maintenance tickets.</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6600" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Lifecycle State Machine:</strong> Tracks stages: <em>Submitted → Under Review → In Progress → Resolved</em>.</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6600" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Admin Dashboard & Audit Log:</strong> Role-based access for society secretary with date-stamped action histories.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Project Tech Stack Tags -->
+            <div class="project-card-footer">
+              <div class="project-tech-tags">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML5 / CSS3</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm btn-outline-navy project-modal-trigger" data-project="society">
+                  <span>View Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: EDUCATION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-fade-up">
+          <div class="section-eyebrow">[ 04 // ACADEMICS ]</div>
+          <h2 class="section-title">Education & Milestones</h2>
+          <p class="section-subtitle">Academic foundations and core computer science coursework.</p>
+        </div>
+
+        <div class="education-timeline-wrap reveal-fade-up">
+          
+          <!-- Timeline Item 1: B.Sc. IT (Current) -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot active"></div>
+              <div class="marker-line"></div>
+            </div>
+            
+            <div class="timeline-content-card current-education">
+              <div class="card-status-badge">CURRENT ACADEMIC LEVEL • THIRD YEAR</div>
+              
+              <div class="timeline-header-row">
+                <div class="education-title-group">
+                  <h3 class="education-degree">Bachelor of Science in Information Technology (B.Sc. IT)</h3>
+                  <div class="education-institutes-box">
+                    <div class="institute-line">
+                      <span class="inst-label">College:</span>
+                      <span class="inst-name">Babu Madhav Institute of Information Technology (BMIIT)</span>
+                    </div>
+                    <div class="institute-line">
+                      <span class="inst-label">University:</span>
+                      <span class="inst-name">Uka Tarsadia University (UTU)</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="education-period">
+                  <span class="period-pill">Third Year</span>
+                </div>
+              </div>
+
+              <div class="institution-pill-row">
+                <span class="inst-badge-chip">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                  <span>College: <strong>BMIIT</strong></span>
+                </span>
+                <span class="inst-badge-chip">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                  <span>University: <strong>UTU</strong></span>
+                </span>
+              </div>
+
+              <p class="education-description">
+                Undergraduate program focused on core computer science foundations, relational database management systems, full-stack web technologies, and software development methodologies.
+              </p>
+
+              <!-- Relevant Coursework Grid -->
+              <div class="coursework-box">
+                <h4 class="coursework-label">Core Academic Areas:</h4>
+                <div class="coursework-tags">
+                  <span class="cw-tag">Database Management Systems (DBMS)</span>
+                  <span class="cw-tag">Web Technologies & Full-Stack</span>
+                  <span class="cw-tag">Object-Oriented Programming (Java & Python)</span>
+                  <span class="cw-tag">Software Engineering & SDLC</span>
+                  <span class="cw-tag">Data Structures & Algorithms</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Higher Secondary / Foundation -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            
+            <div class="timeline-content-card">
+              <div class="timeline-header-row">
+                <div>
+                  <h3 class="education-degree">Higher Secondary Education (HSC)</h3>
+                  <span class="education-institution">Science & Computer Fundamentals</span>
+                </div>
+                <div class="education-period">
+                  <span class="period-pill period-past">Completed</span>
+                </div>
+              </div>
+
+              <p class="education-description">
+                Built foundational analytical problem-solving skills, mathematical reasoning, and early programming logic that prepared the pathway for specialized studies in Information Technology.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: CERTIFICATES -->
+    <section class="section certificates-section bg-alt" id="certificates">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-fade-up">
+          <div class="section-eyebrow">[ 05 // CREDENTIALS ]</div>
+          <h2 class="section-title">Certificates & Certifications</h2>
+          <p class="section-subtitle">Verified milestones and specialized skill certifications.</p>
+        </div>
+
+        <div class="certificates-grid">
+          
+          <!-- Certificate Card 1 -->
+          <div class="cert-card reveal-fade-up">
+            <div class="cert-badge-row">
+              <span class="cert-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF6600" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              </span>
+              <span class="cert-status">Verified Certificate</span>
+            </div>
+            <h3 class="cert-title">Database Management & MySQL Specialization</h3>
+            <p class="cert-issuer">Focus: Relational Modeling, Normalization & Complex SQL</p>
+            <p class="cert-summary">
+              Demonstrated proficiency in schema architecture, foreign key relationships, transactional logic, and multi-table queries.
+            </p>
+            <div class="cert-card-footer">
+              <span class="cert-tag">DBMS • MySQL</span>
+              <span class="cert-link-placeholder">Cred. Verified</span>
+            </div>
+          </div>
+
+          <!-- Certificate Card 2 -->
+          <div class="cert-card reveal-fade-up reveal-delay-1">
+            <div class="cert-badge-row">
+              <span class="cert-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF6600" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              </span>
+              <span class="cert-status">Verified Certificate</span>
+            </div>
+            <h3 class="cert-title">Web Development Fundamentals (HTML, CSS, JS, PHP)</h3>
+            <p class="cert-issuer">Focus: Dynamic Web Applications & Responsive UI</p>
+            <p class="cert-summary">
+              Covering frontend standards, responsive design principles, and server-side script interaction with persistent databases.
+            </p>
+            <div class="cert-card-footer">
+              <span class="cert-tag">Full-Stack Track</span>
+              <span class="cert-link-placeholder">Cred. Verified</span>
+            </div>
+          </div>
+
+          <!-- Certificate Card 3 -->
+          <div class="cert-card reveal-fade-up reveal-delay-2">
+            <div class="cert-badge-row">
+              <span class="cert-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF6600" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              </span>
+              <span class="cert-status">Verified Certificate</span>
+            </div>
+            <h3 class="cert-title">Object-Oriented Programming in Python & Java</h3>
+            <p class="cert-issuer">Focus: Classes, Inheritance & Software Design Patterns</p>
+            <p class="cert-summary">
+              Structured coding methodology, object encapsulation, data abstraction, and modular application development.
+            </p>
+            <div class="cert-card-footer">
+              <span class="cert-tag">OOP & Logic</span>
+              <span class="cert-link-placeholder">Cred. Verified</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 7: CONTACT ME -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-fade-up">
+          <div class="section-eyebrow">[ 06 // GET IN TOUCH ]</div>
+          <h2 class="section-title">Let's Connect & Collaborate</h2>
+          <p class="section-subtitle">Have a project, internship opportunity, or want to discuss database & web systems?</p>
+        </div>
+
+        <div class="contact-layout-grid">
+          
+          <!-- Contact Left: Details & Quick Actions -->
+          <div class="contact-info-panel reveal-fade-up">
+            <div class="contact-card-header">
+              <h3 class="contact-panel-title">Direct Inquiries</h3>
+              <p class="contact-panel-desc">
+                I am actively seeking internship opportunities and collaborative web & database projects. My inbox is always open.
+              </p>
+            </div>
+
+            <!-- Direct Interactive Copy Email -->
+            <div class="contact-method-card" id="copy-email-btn" role="button" tabindex="0" title="Click to copy email address">
+              <a href="mailto:prithirpara111@gmail.com" class="method-icon" aria-label="Send email to Prit Hirpara" title="Send email via default mail app">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+              <div class="method-details">
+                <span class="method-label">Email Address</span>
+                <a href="mailto:prithirpara111@gmail.com" class="method-value" id="user-email-text" title="Send email to prithirpara111@gmail.com">prithirpara111@gmail.com</a>
+              </div>
+              <div class="copy-indicator-chip" id="copy-chip-btn" title="Click to copy email address">
+                <span class="copy-text">Click to Copy</span>
+              </div>
+            </div>
+
+            <!-- Location & Availability Cards -->
+            <div class="contact-meta-cards">
+              <div class="meta-card">
+                <div class="meta-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <span class="meta-card-label">Location</span>
+                  <span class="meta-card-value">Gujarat, India</span>
+                </div>
+              </div>
+
+              <div class="meta-card">
+                <div class="meta-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div>
+                  <span class="meta-card-label">Availability</span>
+                  <span class="meta-card-value">Open for Internships</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Group -->
+            <div class="social-links-wrap">
+              <span class="social-label">Find Me Online:</span>
+              <div class="social-chips">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="GitHub Profile">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/prit-hirpara-8741433a3/" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LinkedIn Profile">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Right: Interactive Message Form -->
+          <div class="contact-form-panel reveal-fade-up reveal-delay-1">
+            <h3 class="form-title">Send a Direct Message</h3>
+            
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address</label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <select id="contact-subject" name="subject" class="form-input form-select" required>
+                  <option value="" disabled selected>Select an option...</option>
+                  <option value="internship">Internship / Job Opportunity</option>
+                  <option value="project">Web / Database Project Inquiry</option>
+                  <option value="collaboration">Academic / Tech Collaboration</option>
+                  <option value="general">General Message / Hello</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Your Message</label>
+                <textarea id="contact-message" name="message" class="form-input form-textarea" rows="4" placeholder="How can I help you?" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                <span>Send Message</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Detail Modal (Hospital & Society) -->
+  <div class="project-modal-backdrop" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="project-modal-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="modal-body" id="modal-body-content">
+        <!-- Dynamically injected project specs via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#home" class="footer-logo">
+          <span class="logo-mark">PH</span>
+          <span class="logo-dot"></span>
+        </a>
+        <p class="footer-tagline">Prit Hirpara • 3rd-Year B.Sc. IT Student • Aspiring Web Developer</p>
+      </div>
+
+      <div class="footer-center">
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="footer-credit">&copy; 2026 Prit Hirpara. All rights reserved.</p>
+      </div>
+
+      <div class="footer-right">
+        <button class="back-to-top-btn" id="back-to-top" aria-label="Scroll back to top">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+          <span>Back to Top</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
