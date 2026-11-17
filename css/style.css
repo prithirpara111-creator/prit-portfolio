@@ -2245,3 +2245,34 @@ ul {
     }
 }
 
+/* MOBILE TOP FLOATING BADGE FIX */
+@media (max-width: 768px) {
+    .badge-top-right {
+        top: 15px !important;
+        right: 10px !important;
+        left: auto !important;
+
+        width: auto !important;
+        max-width: calc(100% - 20px) !important;
+        box-sizing: border-box;
+        padding: 8px 10px !important;
+        gap: 8px !important;
+
+        animation: none !important;
+    }
+
+    .badge-top-right .floating-title {
+        font-size: 0.75rem !important;
+    }
+
+    .badge-top-right .floating-sub {
+        font-size: 0.65rem !important;
+    }
+
+    .badge-top-right .floating-icon {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+
