@@ -2220,3 +2220,24 @@ ul {
     align-items: center;
   }
 }
+
+/* MOBILE MENU CLICK FIX */
+@media (max-width: 768px) {
+    .mobile-drawer-overlay {
+        z-index: 2000 !important;
+    }
+
+    .nav-menu,
+    .nav-menu.open {
+        position: fixed !important;
+        z-index: 2001 !important;
+        pointer-events: auto !important;
+    }
+
+    .nav-menu a {
+        position: relative;
+        z-index: 2002;
+        pointer-events: auto !important;
+    }
+}
+
