@@ -2221,23 +2221,27 @@ ul {
   }
 }
 
-/* MOBILE MENU CLICK FIX */
+/* MOBILE NAVIGATION CLICK FIX */
 @media (max-width: 768px) {
-    .mobile-drawer-overlay {
-        z-index: 2000 !important;
+    .header {
+        z-index: 1100 !important;
     }
 
     .nav-menu,
     .nav-menu.open {
-        position: fixed !important;
-        z-index: 2001 !important;
+        z-index: 1101 !important;
         pointer-events: auto !important;
     }
 
-    .nav-menu a {
+    .mobile-drawer-overlay {
+        z-index: 1090 !important;
+    }
+
+    .nav-menu .nav-link {
         position: relative;
-        z-index: 2002;
+        z-index: 1102 !important;
         pointer-events: auto !important;
+        cursor: pointer;
     }
 }
 
