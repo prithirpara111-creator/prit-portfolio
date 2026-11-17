@@ -2161,19 +2161,22 @@ ul {
     transform: translateY(-8.5px) rotate(-45deg);
   }
 
-  .mobile-drawer-overlay {
+  
+.mobile-drawer-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(10, 25, 47, 0.4);
-    backdrop-filter: blur(4px);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     z-index: 1040;
     opacity: 0;
     pointer-events: none;
     transition: opacity var(--transition-fast);
-  }
+}
+
 
   .mobile-drawer-overlay.active {
     opacity: 1;
