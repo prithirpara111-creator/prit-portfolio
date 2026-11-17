@@ -2276,6 +2276,39 @@ z-index: 2000;
     filter: none !important;
 }
 
+/* FINAL FIX - Mobile Menu Website Blur */
+
+@media (max-width: 768px) {
+
+    body {
+        filter: none !important;
+    }
+
+    body:has(.nav-menu.open) main,
+    body:has(.nav-menu.open) section,
+    body:has(.nav-menu.open) .header {
+        filter: none !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    }
+
+    .mobile-drawer-overlay,
+    .mobile-drawer-overlay.active {
+        background: transparent !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        filter: none !important;
+    }
+
+    .nav-menu,
+    .nav-menu.open {
+        background: #ffffff !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        filter: none !important;
+    }
+}
+
 
 
 
