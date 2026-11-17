@@ -2216,44 +2216,4 @@ ul {
     flex-direction: column;
     align-items: center;
   }
-/* ================= FINAL FIX: Blur + Android Menu Button ================= */
-@media (max-width: 768px) {
-  /* 1. Saare blur hatao */
-    * {
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-  }
-  .header, .nav-menu, .nav-list, .nav-link {
-    filter: none !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    transform: translateZ(0) !important;
-  }
-
-  /* 2. Android pe menu button force dikhao */
-  .nav-toggle {
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    width: 32px !important;
-    height: 22px !important;
-    flex-direction: column !important;
-    justify-content: space-between !important;
-    z-index: 9999 !important;
-    background: transparent !important;
-  }
-
-  .hamburger-bar {
-    display: block !important;
-    width: 100% !important;
-    height: 3px !important;
-    background-color: #0A192F !important; /* Navy - white pe dikhega */
-    border-radius: 3px !important;
-    opacity: 1 !important;
-  }
-
-  .nav-actions .btn {
-    display: none !important; /* mobile pe Get in touch button hata do taaki jagah bane */
-  }
-}
 }
